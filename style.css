@@ -1,0 +1,71 @@
+  
+  
+  
+  body {
+    transition: background-color linear 1s;
+    
+  }
+  
+  h1 {
+    color:#beef;
+    font-size: 50pt;
+    
+  }
+  
+  strong {
+    color: #adadad;
+    font-size: 17.777pt;
+    
+  }
+  
+  body.phase1{
+    position:relative; 
+    background-color: rgb(241, 190, 123);
+    
+  }
+  
+  body.phase2{
+    position:relative; 
+    background-color: #440044;
+    color: rgb(17, 233, 75);
+    
+  }
+  
+  body.phase3 {
+    background-color: #990000;
+    color: rgb(238, 254, 4);
+  }
+  
+iframe{
+  
+  mix-blend-mode: difference;
+  
+}
+
+#hauntingEye {
+  pointer-events: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./scp_background2.jpg");
+  mix-blend-mode: difference;
+  object-fit: fill;
+  
+  opacity: 0.0;
+  transition: opacity linear 10s;
+  
+  z-index: 5;
+}
+
+#hauntingEye.phase1 {
+    opacity: 0.2
+  }
+
+#hauntingEye.phase2 {
+    opacity: 0.5
+  }
+
+#hauntingEye.phase3 {
+    opacity: 0.8
+  }
+

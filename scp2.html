@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SCP666-Unknow place!</title>
+    <script src="narrativeManager.js"></script>
+    <script src="narrativeBeats.js"></script>
+    <script src="hauntings.js"></script>
+    <script src="init.js"></script>
+
+    <style>
+        body {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            animation: shrinkAnimation 5s linear infinite, shakeAnimation 0.1s linear infinite;
+            transform-origin: center center;
+            text-align: center;
+        }
+
+        @keyframes shrinkAnimation {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(0.5);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes shakeAnimation {
+            0% {
+                transform: translate(0);
+            }
+            10% {
+                transform: translate(-5px, -5px);
+            }
+            20% {
+                transform: translate(5px, 5px);
+            }
+            30% {
+                transform: translate(-5px, 5px);
+            }
+            40% {
+                transform: translate(5px, -5px);
+            }
+            50% {
+                transform: translate(0);
+            }
+        }
+
+        .hacked-text {
+            font-size: 24px;
+            color: #ff0000;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            animation: hackAnimation 1s infinite;
+        }
+
+        @keyframes hackAnimation {
+            0% {
+                visibility: hidden;
+            }
+            50% {
+                visibility: visible;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>SCP666-The Webpage Unknow Hole</h1>
+        <p>Welcome to the abyss of the internet, where all pages get consumed by the Webpage Black Hole.</p>
+        <p>Once a webpage enters the event horizon, it gets stretched and distorted beyond recognition, lost forever in the void.</p>
+        <p>Witness the power of the black hole as it devours information, images, and videos, leaving no trace behind.</p>
+        <a href="cetology.html">Continue Exploring</a>
+    </div>
+</body>
+</html>
+
+

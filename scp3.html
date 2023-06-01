@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SCP-148: Chaotic Page</title>
+    <style>
+        body {
+            transition: background-color linear 1s;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+        }
+
+        h1 {
+            color: #ff0000;
+            font-size: 40pt;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        strong {
+            color: #adadad;
+            font-size: 20pt;
+        }
+
+        body.phase1 {
+            position: relative;
+            background-image: url("./scp_background2.jpg");
+            background-size: cover;
+        }
+
+        body.phase2 {
+            position: relative;
+            background-image: url("./scp_background2.jpg");
+            background-size: cover;
+            color: #00ff00;
+        }
+
+        body.phase3 {
+            position: relative;
+            background-image: url("./scp_background2.jpg");
+            background-size: cover;
+            color: #0000ff;
+        }
+
+        iframe {
+            mix-blend-mode: difference;
+        }
+
+        #hauntingEye {
+            pointer-events: none;
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            background-image: url("./whaleEye.jpg");
+            mix-blend-mode: difference;
+            object-fit: fill;
+            opacity: 0.0;
+            transition: opacity linear 10s;
+            z-index: 5;
+        }
+
+        #hauntingEye.phase1 {
+            opacity: 0.2;
+        }
+
+        #hauntingEye.phase2 {
+            opacity: 0.5;
+        }
+
+        #hauntingEye.phase3 {
+            opacity: 0.8;
+        }
+
+        /* Chaotic and disorienting effects */
+        .chaotic-content {
+            position: absolute;
+            top: 1000%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: chaoticAnimation 5s linear infinite;
+            text-align: center; 
+        }
+
+        @keyframes chaoticAnimation {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+            25% {
+                transform: translate(-50%, -50%) rotate(90deg);
+            }
+            50% {
+                transform: translate(-50%, -50%) rotate(180deg);
+            }
+            75% {
+                transform: translate(-50%, -50%) rotate(270deg);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body class="phase1">
+    <div class="chaotic-content">
+        <h1>SCP-148: Chaotic Page</h1>
+        <p>SCP-148: The Haunted Webpage, is one of the most notorious websites. It is characterized by its uncontrollable nature, inducing chaos and an overwhelming desire to escape the confines of the screen. The webpage exhibits anomalous behavior that defies conventional programming logic, posing a constant challenge to even the most skilled programmers who attempt to tame its haunted essence.</p>
+        <p>Upon accessing SCP-148, users are immediately drawn into a disorienting and disconcerting experience. The webpage defies traditional navigation patterns, with elements constantly shifting, resizing, and overlapping each other. Text and images morph and distort, creating a nightmarish and ever-changing visual landscape.</p>
+        <p>The haunted nature of SCP-148 extends beyond its visual appearance. Users have reported strange phenomena occurring while interacting with the webpage. Unsettling whispers, inexplicable sounds, and sudden bursts of static can be heard emanating from the speakers, further adding to the eerie atmosphere.</p>
+        <p>Attempts to study and analyze SCP-148 have proven challenging due to its elusive and unpredictable nature. Researchers have observed that the webpage possesses an anomalous sentience, adapting and responding to user interactions in real-time. It seems to feed off the fear and confusion of those who dare to explore its depths.</p>
+        <p>SCP-148 serves as a stark reminder of the boundaries of human comprehension when faced with supernatural phenomena. The webpage stands as a testament to the enduring mystery and unexplained forces that lie beyond our understanding, serving as a haunting reminder that some things are better left unexplored.</p>
+
+        <a href="cetology.html">Continue Exploring</a>
+    </div>
+</body>
+</html>
